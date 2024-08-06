@@ -108,9 +108,9 @@ def load_data():
     Tess_df = load_data_TESS(Tess)
     Savee_df= load_data_SAVEE(Savee)
     Ravdess_df= load_data_RAVDESS(Ravdess)
+    
     data_path = pd.concat([Tess_df, Savee_df, Ravdess_df], axis = 0)
     data_path.to_csv("data_path.csv",index=False)
     data_path.head()
     return data_path
     
-data_path= load_data()
