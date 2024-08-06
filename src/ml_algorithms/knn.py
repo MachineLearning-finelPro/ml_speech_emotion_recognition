@@ -26,14 +26,14 @@ class KNNClassifier(ClassifierInterface):
 
 if __name__ == '__main__':
     k_values = [3, 5, 7, 9, 13, 17]
-    file_paths = ['features.csv']
+    file_paths = ['csvResults/features.csv']
     n_runs = 20
 
     results = {}
 
     for file_path in file_paths:
-        print(f"Evaluating file: {file_path}")
         X, y = KNNClassifier.load_data(file_path)
+        print(f"Evaluating file: {file_path}")
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 

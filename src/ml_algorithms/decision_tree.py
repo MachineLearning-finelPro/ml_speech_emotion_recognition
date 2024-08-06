@@ -39,7 +39,7 @@ if __name__ == '__main__':
         {'max_depth': 10, 'criterion': 'entropy',
             'min_samples_split': 10, 'min_samples_leaf': 2}
     ]
-    file_paths = ['features.csv']
+    file_paths = ['csvResults/features.csv']
     n_runs = 20
 
     results = {}

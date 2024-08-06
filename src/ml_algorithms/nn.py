@@ -34,7 +34,7 @@ class EmotionDataset(Dataset):
         return self.features[idx], self.labels[idx]
 
 # Load and preprocess data
-data = pd.read_csv('features.csv')  # Replace with your actual file name
+data = pd.read_csv('csvResults/features.csv')  # Replace with your actual file name
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 

@@ -41,14 +41,14 @@ if __name__ == '__main__':
         {'n_estimators': 150, 'max_depth': 7, 'criterion': 'entropy',
          'min_samples_split': 4, 'min_samples_leaf': 2},
     ]
-    file_paths = ['features.csv']
+    file_paths = ['csvResults/features.csv']
     n_runs = 20
 
     results = {}
 
     for file_path in file_paths:
-        print(f"Evaluating file: {file_path}")
         X, y = RFClassifier.load_data(file_path)
+        print(f"Evaluating file: {file_path}")
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 

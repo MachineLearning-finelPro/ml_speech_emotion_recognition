@@ -71,5 +71,5 @@ print(len(X), len(Y), data_path.Path.shape)
 
 Features = pd.DataFrame(X)
 Features['labels'] = Y
-Features.to_csv('features.csv', index=False)
+Features.to_csv('csvResults/features.csv', index=False)
 Features.head()

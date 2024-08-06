@@ -31,7 +31,7 @@ if __name__ == '__main__':
         (1.0, 'poly'),
         (1.0, 'sigmoid'),
     ]
-    file_paths = ['features.csv']
+    file_paths = ['csvResults/features.csv']
     n_runs = 20
 
     results = {}
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         X, y = SVMClassifier.load_data(file_path)
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
-
+        
         for C, kernel in configurations:
             accuracies = []
             for seed in range(n_runs):
