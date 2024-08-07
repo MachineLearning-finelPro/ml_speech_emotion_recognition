@@ -12,7 +12,7 @@ he project uses three different datasets: TESS, SAVEE, and RAVDESS. Each of thes
 
 ## Documents
 
-[Explanation of the project](/)
+[Explanation of the project](/docsPro.pdf)
 
 ## Results
 
